@@ -11,6 +11,10 @@ ctx.addEventListener('install', event => {
     );
 });
 
+ctx.addEventListener('activate', event => {
+    console.log('V1 now ready to handle fetches !');
+});
+
 ctx.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request).then(response => {
