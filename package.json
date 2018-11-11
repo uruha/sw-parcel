@@ -8,7 +8,9 @@
     "ts-node": "^7.0.1",
     "typescript": "^3.1.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/service_worker_api": "0.0.9"
+  },
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
